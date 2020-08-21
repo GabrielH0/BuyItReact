@@ -1,0 +1,23 @@
+#lista{
+   margin-top: 100px;
+   display: flex;
+
+}
+#produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+.card{
+    width: 18rem;
+    float: left;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 4%;
+}
+
+.card:hover {
+    background-color: #FF8C00;
+}

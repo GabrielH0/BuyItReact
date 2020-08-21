@@ -1,0 +1,19 @@
+#signin{
+    margin:auto;
+    padding-top: 15%;
+}
+
+#form{
+    margin: auto;
+    border-style: solid;
+    border-color: #FF8C00;
+    border-radius: 15px;
+    background-color: #3D3D3D;
+    height: 200px;
+    width: 25%;
+    text-align: center;
+}
+
+#login{
+    padding-top: 10%;
+}

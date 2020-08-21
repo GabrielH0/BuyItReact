@@ -1,0 +1,15 @@
+#comments{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid;
+    border-radius: 25px;
+    background-color: #F9F9F9;
+    border-color: #FF8C00;
+    
+}
+
+h5,p{
+    text-indent: 4%;
+}
