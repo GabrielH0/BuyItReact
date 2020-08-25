@@ -14,7 +14,7 @@ class Product extends React.Component{
         return(
             <div id='card'>
                 <Card>
-                    <Link to={this.props.link} style={{color: 'black',textDecoration:'none'}}>
+                    <Link to={this.props.link} style={{color: 'black', textDecoration:'none'}}>
                         <Card.Img variant="top" src={process.env.PUBLIC_URL +'/images/'+this.state.product.imagem} style={ {width:"100%",height:"60%" }} />
                         <Card.Body>
                             <Card.Title>{this.state.product.nome}</Card.Title>

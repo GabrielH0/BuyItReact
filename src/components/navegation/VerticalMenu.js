@@ -1,6 +1,7 @@
 import React from 'react'
 import './VerticalMenu.css'
-import Categories from './categories/Categories';
+import './categories/Categories.css'
+import Categories from './categories/Categories'
 
 
 class VerticalMenu extends React.Component {
@@ -8,40 +9,42 @@ class VerticalMenu extends React.Component {
     constructor() {
         super();
         this.state = { 
-            showPopup: false
+            showCategories: false
          };
     }
 
-    showCategoriesPopup = () => {
+    showCategoriesPopup() {
         this.setState(
-            { showPopup:!this.state.showPopup }
+            { showCategories: !this.state.showCategories }
         )
     }
 
 
     render() {
         return (
-            <div id="menuVertical"> 
-                <div id="links">
-                    <div className="dropdown link">
-                        <a onClick={this.showCategoriesPopup} className=" dropdown-toggle">Categorias</a>
-                        <div className={
-                            this.state.showPopup ? "dropdown-menu show" : "dropdown-menu"
-                        }>
-                        <Categories/>
+            <div>
+                <div id="menuVertical"> 
+                    <div id="links">
+                        <div className="dropdown link">
+                            <a onClick={this.showCategoriesPopup.bind(this)}>Categorias</a>
+                        </div>
+                        <div className="link">
+                            <a>Promoções</a>
+                        </div>
+                        <div className="link">
+                            <a>Recomendados</a>
                         </div>
                     </div>
-                    <div className="link">
-                        <a>Promoções</a>
-                    </div>
-                    <div className="link">
-                        <a>Recomendados</a>
-                    </div>
                 </div>
-
+            {this.state.showCategories ? 
+                <Categories/>
+                : null
+                }
             </div>
+            
         )
     }
 }
 
 export default VerticalMenu;
+

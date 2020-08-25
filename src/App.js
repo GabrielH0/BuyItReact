@@ -7,12 +7,14 @@ import DashboardSales from './components/sales/DashboardSales'
 import signIn from './components/login/signIn'
 import VerticalMenu from './components/navegation/VerticalMenu'
 import Categories from './components/navegation/categories/Categories'
+import './App.css'
 
 class App extends React.Component{
   
   
   render(){
   return (
+    <body>
         <BrowserRouter>
         <Header/>
         <VerticalMenu/>
@@ -24,6 +26,7 @@ class App extends React.Component{
             <Route exact path="/vendas" component={DashboardSales}/>
           </Switch>
         </BrowserRouter>
+      </body>
    );
   }
 }

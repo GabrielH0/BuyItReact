@@ -12,9 +12,6 @@ class signIn extends React.Component {
     }
 
     handleSignIn = async e => {
-
-        console.log("singin")
-        console.log(this.state)
         e.preventDefault();
         const { username, password } = this.state;
         if (!username || !password) {

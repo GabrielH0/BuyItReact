@@ -1,5 +1,11 @@
-.categoriesPopUp{
-   display: inline-flex;
-    height: 100px;
-   width: 100px;
+.navbar_dropdown {
+	height: 534px;
+	position: absolute;
+	width: 100%;
+	max-width: 1305px;
+	z-index: 90;
+	background-color: #3D3D3D;
+	margin-left: 15%;
+	margin-right: 15%;
 }
+  
