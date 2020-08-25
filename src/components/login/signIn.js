@@ -19,8 +19,13 @@ class signIn extends React.Component {
         } else {
             try {
                 const response = await api.post("/login", { username, password });
-                login(response.data.token);
-                this.props.history.push("/");
+                login(response.data)
+                const usuario = await (await api.get("/user/" + username + "/")).data
+                if (usuario.tipoDoUsuario == "CONSUMIDOR" || usuario.tipoDoUsuario == null) {
+                    this.props.history.push("/");
+                } else if (usuario.tipoDoUsuario == "VENDEDOR") {
+                    this.props.history.push("/comercial")
+                }
             } catch (error) {
                 this.setState(
                     { error: "Houve um problema com o login, verifique suas credenciais" }
