@@ -1,0 +1,23 @@
+.btn-orange {
+  background-color: #ff8c00;
+}
+
+.btn-default {
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.margin-t-small {
+  margin-top: 5px;
+}
+
+.margin-t-medium {
+  margin-top: 10px;
+}

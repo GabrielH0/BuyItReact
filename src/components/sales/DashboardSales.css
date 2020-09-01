@@ -1,0 +1,30 @@
+.a-box {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0.1px;
+  transition: transform 450ms;
+  text-align: center;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.a-box:hover {
+  transform: scale(1.08);
+}
+
+.icon-card {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+
+.descricao-card {
+  font-size: 18px;
+  text-decoration: none;
+}

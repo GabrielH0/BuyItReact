@@ -1,19 +1,19 @@
-#signin{
-    margin:auto;
-    padding-top: 15%;
+#signin {
+  margin: auto;
+  padding-top: 15%;
 }
 
-#form{
-    margin: auto;
-    border-style: solid;
-    border-color: #FF8C00;
-    border-radius: 15px;
-    background-color: #3D3D3D;
-    height: 200px;
-    width: 25%;
-    text-align: center;
+#form {
+  margin: auto;
+  border-style: solid;
+  border-color: #ff8c00;
+  border-radius: 15px;
+  background-color: #3d3d3d;
+  height: 200px;
+  width: 25%;
+  text-align: center;
 }
 
-#login{
-    padding-top: 10%;
+#login {
+  padding-top: 10%;
 }
